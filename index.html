@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin-top: 10px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 30px;
+        }
+
+        form {
+
+            margin: auto;
+            background-color: rgba(128, 128, 128, 0.453);
+            width: 350px;
+            border-radius: 2px;
+            padding: 10px 10px 20px 10px;
+
+        }
+
+        input,
+        select {
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            width: 100%;
+            padding: 10px;
+        }
+
+
+
+
+        input[type='submit'] {
+            color: white;
+            background-color: green;
+        }
+
+
+        /* code for dropdown.... */
+
+        .dropbtn {
+            background-color: green;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        .dropdowncon {
+            display: none;
+            position: absolute;
+            background-color:lightgray;
+            width: 160px;
+            z-index: 1;
+        }
+
+
+        .dropdowncon a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+
+        .dropbtn:hover+.dropdowncon /*  from chatgbt */
+         {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <p>First Name</p>
+        <div>
+            <input type="text" placeholder="Your name..">
+        </div><br>
+        <p>Last Name</p>
+        <div>
+            <input type="text" placeholder="Your last name..">
+        </div><br>
+        <p>County</p>
+        <select>
+            <option value="Australia" selected>Australia</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Canada">Canada</option>
+
+        </select><br>
+
+        <input type="submit" name="sub1" id="sub1" placeholder="submit">
+
+
+    </form>
+
+
+
+
+
+
+
+    <div class="dropdown">
+        <button class=" dropbtn">Dropdown</button>
+        <div class="dropdowncon">
+            <a href="#">Link 1 </a>
+            <a href="#">Link 2 </a>
+            <a href="#">Link 3 </a>
+        </div>
+    </div>
+    <p> this is a dropdown menu</p>
+
+</body>
+
+</html>
